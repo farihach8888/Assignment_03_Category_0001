@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.0/dist/full.css" rel="stylesheet" />
+</head>
+<body class="bg-base-100">
+
+  <div class="navbar bg-base-100 shadow-sm px-6">
+    <!-- Left: Logo -->
+    <div class="flex-1">
+      <a class="btn btn-ghost normal-case text-xl flex items-center gap-2">
+        <img src="c1-assets/logo-header.png" class="h-8 w-8" alt="Logo" />
+        <span class="font-semibold">Browse<span class="text-yellow-500">4</span>Pets</span>
+      </a>
+    </div>
+
+    <!-- Right: Navigation & Actions -->
+    <div class="flex items-center gap-4">
+      <!-- Nav links -->
+      <ul class="menu menu-horizontal px-1 text-sm font-medium hidden md:flex">
+        <li><a>Find a pet</a></li>
+        <li><a>Breeds</a></li>
+        <li><a>Contact us</a></li>
+      </ul>
+
+      <!-- Icons -->
+      <button class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6 6 0 10-12 0v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+        </svg>
+      </button>
+      <button class="btn btn-ghost btn-circle">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-4.35-4.35M16.65 16.65A7.5 7.5 0 1116.65 2a7.5 7.5 0 010 15z" />
+        </svg>
+      </button>
+
+      <!-- Auth Buttons -->
+      <div class="flex gap-2">
+        <button class="btn btn-outline btn-sm">Login</button>
+        <button class="btn btn-warning btn-sm">Register</button>
+      </div>
+    </div>
+  </div>
+  <section class="bg-base-100 px-6 py-16">
+    <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
+      
+      <!-- Left Text Section -->
+      <div class="md:w-1/2 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">
+          Pamper Your Pet,<br />
+          Because They Deserve <br class="hidden md:block" />
+          the Bes<span class="inline-block">t</span>
+        </h1>
+        <p class="text-base text-gray-600 mb-6">
+          Discover a world of treats, toys, and essentials handpicked for your furry friends. 
+          Shop now and make tails wag with joy!
+        </p>
+        <button class="btn btn-warning">Find a pet</button>
+      </div>
+  
+      <!-- Right Image Section -->
+      <div class="md:w-1/2">
+        <img src="c1-assets/cat-big.png" alt="Cute Cat" class="w-full max-w-md mx-auto md:mx-0" />
+      </div>
+  
+    </div>
+  </section>
+  <section class="px-6 py-16 bg-base-100">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-bold mb-8">Browse By Categories</h2>
+      
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+        <!-- Category Card -->
+        <div class="bg-yellow-100 rounded-xl p-4 text-center">
+          <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+            <img src="c1-assets/dog-cartoon.png" alt="Dog" class="w-10 h-10" />
+          </div>
+          <h3 class="font-semibold">Dog</h3>
+          <p class="text-sm text-gray-600">3 items</p>
+        </div>
+  
+        <div class="bg-yellow-100 rounded-xl p-4 text-center">
+          <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+            <img src="c1-assets/fish-cartoon.png" alt="Fish" class="w-10 h-10" />
+          </div>
+          <h3 class="font-semibold">Fish</h3>
+          <p class="text-sm text-gray-600">3 items</p>
+        </div>
+  
+        <div class="bg-yellow-100 rounded-xl p-4 text-center">
+          <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+            <img src="c1-assets/cat-cartoon.png" alt="Cat" class="w-10 h-10" />
+          </div>
+          <h3 class="font-semibold">Cat</h3>
+          <p class="text-sm text-gray-600">3 items</p>
+        </div>
+  
+        <div class="bg-yellow-100 rounded-xl p-4 text-center">
+          <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+            <img src="c1-assets/bird-cartoon.png" alt="Birds" class="w-10 h-10" />
+          </div>
+          <h3 class="font-semibold">Birds</h3>
+          <p class="text-sm text-gray-600">3 items</p>
+        </div>
+  
+        <div class="bg-yellow-100 rounded-xl p-4 text-center">
+          <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+            <img src="c1-assets\mouse-cartoon.png" alt="Small Pet" class="w-10 h-10" />
+          </div>
+          <h3 class="font-semibold">Small pet</h3>
+          <p class="text-sm text-gray-600">3 items</p>
+        </div>
+  
+        <div class="bg-yellow-100 rounded-xl p-4 text-center">
+          <div class="bg-white w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-3">
+            <img src="c1-assets/rabbit-cartoon.png" alt="Rabbit" class="w-10 h-10" />
+          </div>
+          <h3 class="font-semibold">Rabit</h3>
+          <p class="text-sm text-gray-600">2 items</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+</body>
+</html>
